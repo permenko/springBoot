@@ -6,14 +6,23 @@ public class Task {
 
     @Id private String id;
 
-    String task;
+    private String taskName;
+    private Boolean taskStatus;
 
-    public String getTask() {
-        return  task;
+    public String getTaskName() {
+        return taskName;
     }
 
-    public void setTask(String task) {
-        this.task = task;
+    public void setTaskName(String taskName) {
+        this.taskName = taskName;
+    }
+
+    public Boolean getTaskStatus() {
+        return taskStatus;
+    }
+
+    public void setTaskStatus(Boolean taskStatus) {
+        this.taskStatus = taskStatus;
     }
 
 }

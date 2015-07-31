@@ -9,6 +9,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(collectionResourceRel = "tasks", path = "tasks")
 public interface TaskRepository extends MongoRepository<Task, String> {
 
-    List<Task> findByName(@Param("name") String name);
+
 
 }
